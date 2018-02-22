@@ -161,7 +161,7 @@ def main(args):
 		for i in range(1, num_attempts + 1):
 			print("Checking mail. Attempt {} of {}".format(i, num_attempts))
 			messages = mailbox.get_new_mail()
-			msg_num, total_msgs = i, len(messages)
+			msg_num, total_msgs = 1, len(messages)
 			for message in messages:
 				try:
 					_print_message_details(message)
